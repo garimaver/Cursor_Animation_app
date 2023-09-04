@@ -1,4 +1,4 @@
-const curso = document.querySelector(".cursor");
+const cursor = document.querySelector(".cursor");
 var timeout;
 
 // cursor movement
@@ -20,3 +20,9 @@ document.addEventListener("mousemove", (e) =>{
    clearTimeout(timeout);
    timeout = setTimeout(mouseStopped, 1000);
 });
+
+// stop animation off the screen
+document.addEventListener("mouseout", () => {
+    cursor.style.display = 'none';
+}
+)
