@@ -14,6 +14,9 @@ document.addEventListener("mousemove", (e) =>{
   // stop animation
   function mouseStopped () {
     cursor.style.display = 'none';
-    
   }
+
+  //hide animation
+   clearTimeout(timeout);
+   timeout = setTimeout(mouseStopped, 1000)
 });
