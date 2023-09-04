@@ -18,5 +18,5 @@ document.addEventListener("mousemove", (e) =>{
 
   //hide animation
    clearTimeout(timeout);
-   timeout = setTimeout(mouseStopped, 1000)
+   timeout = setTimeout(mouseStopped, 1000);
 });
